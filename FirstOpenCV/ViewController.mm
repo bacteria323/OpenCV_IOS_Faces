@@ -25,6 +25,10 @@
     UIImage* image = [UIImage imageNamed:@"lena.png"];
     cv::Mat faceImage;
     UIImageToMat(image, faceImage);
+    
+    // Convert to grayscale
+    cv::Mat gray;
+    cvtColor(faceImage, gray, CV_BGR2GRAY);
 }
 
 
