@@ -10,6 +10,7 @@
 #include "opencv2/opencv.hpp" // Required for CV_RGBA2GRAY variable
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
