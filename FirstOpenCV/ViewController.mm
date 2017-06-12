@@ -20,6 +20,11 @@
     NSString *cascadePath = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
     
      faceDetector.load([cascadePath UTF8String]);
+    
+    // Load image with face
+    UIImage* image = [UIImage imageNamed:@"lena.png"];
+    cv::Mat faceImage;
+    UIImageToMat(image, faceImage);
 }
 
 
